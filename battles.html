@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>Combats</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <script src="js/ajax.js"></script>
     <style>
         .hidden {
@@ -12,8 +12,13 @@
         }
     </style>
 </head>
-<body>
-    <button class="start-fight">Fight</button>
+<body class="battle_body">
+    <div  class="online_tape">
+            <p style="color: white">online</p>
+    </div>
+    <div  class="battle_back">
+        <button class="start-fight button_battle btn-danger">Fight</button>
+    
     <div class="searching hidden">
         Searching for an opponent...
     </div>
@@ -37,6 +42,10 @@
         </div>
         <button class="turn-btn">Turn</button>
     </div>
+    <div class="status-pnl">
+
+    </div>
     <script src="js/fight.js"></script>
+</div>
 </body>
 </html>
