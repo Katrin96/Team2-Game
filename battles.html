@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Combats</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="js/ajax.js"></script>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button class="start-fight">Fight</button>
+    <div class="searching hidden">
+        Searching for an opponent...
+    </div>
+    <div class="waiting hidden">
+        Waiting for your opponent to make a move...
+    </div>
+    <div class="hidden controls-pnl">
+        <p class="your-hp">30</p>
+        <p class="enemy-hp">30</p>
+        <div class="hit-pnl">
+            <input type="radio" name="hit" value="1" class="hit" checked>
+            <input type="radio" name="hit" value="2" class="hit">
+            <input type="radio" name="hit" value="3" class="hit">
+            <input type="radio" name="hit" value="4" class="hit">
+        </div>
+        <div class="block-pnl">
+            <input type="radio" name="block" value="1" class="block" checked>
+            <input type="radio" name="block" value="2" class="block">
+            <input type="radio" name="block" value="3" class="block">
+            <input type="radio" name="block" value="4" class="block">
+        </div>
+        <button class="turn-btn">Turn</button>
+    </div>
+    <script src="js/fight.js"></script>
+</body>
+</html>
