@@ -1,0 +1,12 @@
+.inp {
+    height: 20px;
+    width: 200px;
+    border: 1px solid black; 
+    border-radius: 5px 0 0 5px;
+}
+.inp_btn {
+    border-radius: 5px 0 0 5px;
+}
+.inp_usrnm{
+    
+}
