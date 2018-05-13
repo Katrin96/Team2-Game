@@ -5,6 +5,7 @@
     <title>Combats</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" href="css/battles.css">
     <script src="js/ajax.js"></script>
     <style>
         .hidden {
@@ -20,30 +21,62 @@
         <button class="start-fight button_battle btn-danger">Fight</button>
     
     <div class="searching hidden">
-        Searching for an opponent...
+        Поиск оппонента...
     </div>
     <div class="waiting hidden">
-        Waiting for your opponent to make a move...
+        Ожидание хода противника...
     </div>
-    <div class="hidden controls-pnl">
+    <div class="controls-pnl hidden">
         <p class="your-hp">30</p>
         <p class="enemy-hp">30</p>
-        <div class="hit-pnl">
-            <input type="radio" name="hit" value="1" class="hit" checked>
-            <input type="radio" name="hit" value="2" class="hit">
-            <input type="radio" name="hit" value="3" class="hit">
-            <input type="radio" name="hit" value="4" class="hit">
-        </div>
-        <div class="block-pnl">
-            <input type="radio" name="block" value="1" class="block" checked>
-            <input type="radio" name="block" value="2" class="block">
-            <input type="radio" name="block" value="3" class="block">
-            <input type="radio" name="block" value="4" class="block">
+        <div class="pnls">
+            <div class="hit-pnl">
+                <div class="inp-group">
+                    Куда бить?
+                </div>
+                <div class="inp-group">
+                    <span>Голова</span>
+                    <input type="radio" name="hit" value="1" class="hit" checked>
+                </div>
+                <div class="inp-group">
+                    <span>Грудь</span>
+                    <input type="radio" name="hit" value="2" class="hit">
+                </div>
+                <div class="inp-group">
+                    <span>Пояс</span>
+                    <input type="radio" name="hit" value="3" class="hit">
+                </div>
+                <div class="inp-group">
+                    <span>Ноги</span>
+                    <input type="radio" name="hit" value="4" class="hit">
+                </div>
+            </div>
+            <div class="block-pnl">
+                <div class="inp-group">
+                    Что защищать?
+                </div>
+                <div class="inp-group"> 
+                    <input type="radio" name="block" value="1" class="hit" checked>
+                    <span>Голова + Грудь</span>
+                </div>
+                <div class="inp-group">
+                    <input type="radio" name="block" value="2" class="hit">
+                    <span>Грудь + Пояс</span>
+                </div>
+                <div class="inp-group">
+                    <input type="radio" name="block" value="3" class="hit">
+                    <span>Пояс + Ноги</span>
+                </div>
+                <div class="inp-group">
+                    <input type="radio" name="block" value="4" class="hit">
+                    <span>Ноги + Голова</span>
+                </div>
+            </div>
         </div>
         <button class="turn-btn">Turn</button>
     </div>
-    <div class="status-pnl">
-
+    <div class="status-pnl hidden">
+        Статус
     </div>
     <script src="js/fight.js"></script>
 </div>
