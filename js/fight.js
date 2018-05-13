@@ -91,8 +91,8 @@ turnBtn.onclick = function(){
         if(res.combat.turn_status){
             playerHealth = res.combat.you.health;
             enemyHealth = res.combat.enemy.health;
-            playerHp.textContent = playerHealth;
-            enemyHp.textContent = enemyHealth;
+            playerHp.textContent = res.combat.you.username + ":" + playerHealth;
+            enemyHp.textContent = res.combat.enemy.username + ":" + enemyHealth;
             let didHit = false;
             res.combat.results[res.combat.results.length - 1].forEach(item => {
                 if(item.origin.id === token){
@@ -133,8 +133,8 @@ function checkForOpponentMove(){
             controlsPnl.classList.remove('hidden');
             playerHealth = combat.you.health;
             enemyHealth = combat.enemy.health;
-            playerHp.textContent = playerHealth;
-            enemyHp.textContent = enemyHealth;
+            playerHp.textContent = res.combat.you.username + ":" + playerHealth;
+            enemyHp.textContent = res.combat.enemy.username + ":" + enemyHealth;
             let didHit = false;
             res.combat.results[res.combat.results.length - 1].forEach(item => {
                 if (item.origin.id === token) {
