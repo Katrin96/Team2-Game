@@ -12,6 +12,7 @@ const Ajax = {
     post: function (link, params, callback) {
         let xhr = new XMLHttpRequest();
         xhr.open('POST', link, true);
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
         xhr.send(params);
         xhr.onreadystatechange = function () {
             if (this.readyState == 4) {
