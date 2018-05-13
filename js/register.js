@@ -1,3 +1,6 @@
+if (window.localStorage.getItem("token")) {
+    document.location.href="./hello.html";
+}
 document.getElementsByClassName("reg")[0].onclick = function () {
     var login = document.getElementsByClassName("login")[0];
     console.log(login.value);
